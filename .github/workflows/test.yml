@@ -15,6 +15,5 @@ jobs:
     steps:
       - name: Run test
         run: |
-          echo With space and no caps: ${{ github.event.inputs.exp_name }}
-          echo no space and no caps: ${{github.event.inputs.exp_name}}
-          echo With space and caps: ${{ github.event.inputs.EXP_NAME }}
+          echo With space and no caps: ${{ github.event.inputs.exp_name }} \
+          New line
